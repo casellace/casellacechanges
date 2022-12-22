@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="stylesheet_cv.css" rel="stylesheet" />
+
+    <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        return alert("Field must be filled out :)");
+      }
+      else 
+        return alert("Thank you!");
+    }
+
+    </script>
+
+    <title>Camilla Casella Résumé</title>
+
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>Stay in touch</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="2nd_page.html">Experience</a></li>
+            <li><a href="3rd_page.html">Volunteering</a></li>
+            <li><a href="4th_page.html">Stay in touch</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="volunteering">
+        <h2>You can contact me using many different platforms: </h2>
+
+          <h3><a href="mailto:casellace@gmail.com" target="_blank" class="fa fa-google"> Send me an email</a>
+            <br><br>
+            <a href="https://github.com/casellace" target="_blank" class="fa fa-github"> Follow me on GitHub</a>
+            <br><br>
+            <a href="https://www.linkedin.com/in/camilla-casella-8bb929130/" target="_blank" class="fa fa-linkedin"> Conect with me on Linkedin</a>
+            <br />
+            <br />
+            <br />
+            Or, alternatively, fill the form below so I can get in touch with you in an appropriate time. 
+            <br><br>
+
+            <form name="myForm" action="4th_page.html" onsubmit="return validateForm()" method="post">
+              E-mail: <input type="text" name="fname">
+              <input type="submit" value="Submit">
+            </form>
+
+            <br><br>
+            If you have some spare time, I would love to hear what you think about my website. I am willing to improve my customer interface so more people can interact with my presentation. 
+            <br><br>
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYssJwDizY1LXRea7bkiznQp64hoAWbj-lAeDiNzKBwA-7Tg/viewform?embedded=true" width="auto" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      </section>
+
+      <footer>
+        Full professional and personal references available on request
+        <a href="mailto:casellace@gmail.com" target="_blank" class="fa fa-google"></a>
+        <a href="https://github.com/casellace" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/camilla-casella-8bb929130/" target="_blank" class="fa fa-linkedin"></a>
+      </footer>
+    </div>
+  </body>
+</html>

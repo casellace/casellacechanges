@@ -1,0 +1,188 @@
+/* MAIN GRID */
+
+.grid-container {
+  display:  grid;
+  grid-auto-rows: auto;
+}
+
+@media only screen
+  and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen
+  and (min-width: 481px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+span {
+  margin: 0;
+}
+
+h4 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header of the page */
+
+header {  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  position: sticky;
+  top: 0%;
+  background: url("images/ceu.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* NAV */
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: sticky;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0px solid white;
+  background-color: #282A35;
+  position:sticky;
+
+}
+
+li {
+  float: left;
+  border-left: 1px solid lightgray;
+  list-style-type: none;
+
+}
+
+li a  {
+  font-size: 14px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:first-child {
+  border: none;
+}
+
+li a:visited {
+  color:  white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  background-color: darkseagreen;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* CONTENT PAGE 1 */
+
+
+main {
+  background-color: #282A35;
+  color: white;
+  font-size: 14px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 2 / 4;
+  text-align: left;
+  padding: 30px;
+
+}
+
+main img {
+  width: 100%;
+  background-size: cover;
+
+}
+
+aside {
+  background: whitesmoke;
+  color: black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: justify;
+  text-align: left;
+  padding: 30px;
+
+}
+
+section {
+  background: whitesmoke;
+  color: black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding:  30px;
+
+}
+
+section a:visited {
+  color: black;
+  text-decoration: none;
+
+}
+
+
+.volunteering {
+  background: whitesmoke;
+  color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: justify;
+  text-align: left;
+  padding: 30px;
+  padding-bottom: 20px;
+
+}
+
+
+footer {
+  background: #282A35;
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  align-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+}
